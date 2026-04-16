@@ -1,0 +1,164 @@
+Reading GPU Configurations...Block Scheduling Policy: ROUND_ROBIN
+Warp Scheduling Policy: ROUND_ROBIN
+trace type : nvbit
+> trace_path: /fast_data/echung67/trace/nvbit/crystal/q12/Kernel0/trace.txt truncate_size: 0
+ trace type : nvbit
+# of blocks: 1024, # of warps: 4096, # of Instrs: 868352
+Macsim started @ Wed Mar 13 20:36:17 2024
+
+**************************************************
+========== starting kernel 0 ==========
+n_blocks_per_kernel[kernel_id]: 1024 m_gpu_params->Block_Stride: 1 n_of_cores: 8
+RAM resp id:0 m_cycle=288 req_time=85 resp_time=203 total_latency=203
+RAM resp id:1000 m_cycle=7627 req_time=7424 resp_time=203 total_latency=204095
+RAM resp id:2000 m_cycle=15462 req_time=15259 resp_time=203 total_latency=407163
+RAM resp id:3000 m_cycle=23317 req_time=23114 resp_time=203 total_latency=610224
+RAM resp id:4000 m_cycle=31155 req_time=30952 resp_time=203 total_latency=813273
+RAM resp id:5000 m_cycle=39015 req_time=38812 resp_time=203 total_latency=1016313
+RAM resp id:6000 m_cycle=46766 req_time=46563 resp_time=203 total_latency=1219353
+RAM resp id:7000 m_cycle=54646 req_time=54443 resp_time=203 total_latency=1422397
+RAM resp id:8000 m_cycle=62501 req_time=62298 resp_time=203 total_latency=1625489
+RAM resp id:9000 m_cycle=70363 req_time=70160 resp_time=203 total_latency=1828550
+RAM resp id:10000 m_cycle=78216 req_time=78012 resp_time=204 total_latency=2031634
+RAM resp id:11000 m_cycle=85974 req_time=85771 resp_time=203 total_latency=2234664
+RAM resp id:12000 m_cycle=93769 req_time=93566 resp_time=203 total_latency=2437699
+[Cycle: 100000]: mem_requests: 12806, mem_responses: 12800, avg_latency: 203
+RAM resp id:13000 m_cycle=101625 req_time=101422 resp_time=203 total_latency=2640729
+RAM resp id:14000 m_cycle=109469 req_time=109266 resp_time=203 total_latency=2843750
+RAM resp id:15000 m_cycle=117328 req_time=117125 resp_time=203 total_latency=3046780
+RAM resp id:16000 m_cycle=125088 req_time=124885 resp_time=203 total_latency=3249872
+RAM resp id:17000 m_cycle=132905 req_time=132702 resp_time=203 total_latency=3452892
+RAM resp id:18000 m_cycle=140753 req_time=140550 resp_time=203 total_latency=3655914
+RAM resp id:19000 m_cycle=148609 req_time=148406 resp_time=203 total_latency=3858940
+RAM resp id:20000 m_cycle=156430 req_time=156227 resp_time=203 total_latency=4061960
+RAM resp id:21000 m_cycle=164290 req_time=164087 resp_time=203 total_latency=4264988
+RAM resp id:22000 m_cycle=171787 req_time=171584 resp_time=203 total_latency=4468019
+RAM resp id:23000 m_cycle=179626 req_time=179423 resp_time=203 total_latency=4671040
+RAM resp id:24000 m_cycle=187444 req_time=187241 resp_time=203 total_latency=4874074
+RAM resp id:25000 m_cycle=195303 req_time=195100 resp_time=203 total_latency=5077104
+[Cycle: 200000]: mem_requests: 25610, mem_responses: 25600, avg_latency: 203
+RAM resp id:26000 m_cycle=203150 req_time=202947 resp_time=203 total_latency=5280161
+RAM resp id:27000 m_cycle=210893 req_time=210690 resp_time=203 total_latency=5483233
+RAM resp id:28000 m_cycle=218703 req_time=218500 resp_time=203 total_latency=5686270
+RAM resp id:29000 m_cycle=226514 req_time=226311 resp_time=203 total_latency=5889351
+RAM resp id:30000 m_cycle=234364 req_time=234161 resp_time=203 total_latency=6092398
+RAM resp id:31000 m_cycle=242163 req_time=241960 resp_time=203 total_latency=6295477
+RAM resp id:32000 m_cycle=250006 req_time=249803 resp_time=203 total_latency=6498511
+RAM resp id:33000 m_cycle=257776 req_time=257573 resp_time=203 total_latency=6701578
+RAM resp id:34000 m_cycle=265594 req_time=265391 resp_time=203 total_latency=6904656
+RAM resp id:35000 m_cycle=273450 req_time=273247 resp_time=203 total_latency=7107731
+RAM resp id:36000 m_cycle=281276 req_time=281072 resp_time=204 total_latency=7310755
+RAM resp id:37000 m_cycle=289090 req_time=288887 resp_time=203 total_latency=7513793
+RAM resp id:38000 m_cycle=296894 req_time=296691 resp_time=203 total_latency=7716835
+[Cycle: 300000]: mem_requests: 38416, mem_responses: 38407, avg_latency: 203
+RAM resp id:39000 m_cycle=304710 req_time=304507 resp_time=203 total_latency=7919886
+RAM resp id:40000 m_cycle=312561 req_time=312358 resp_time=203 total_latency=8122938
+RAM resp id:41000 m_cycle=320418 req_time=320215 resp_time=203 total_latency=8325987
+RAM resp id:42000 m_cycle=328202 req_time=327999 resp_time=203 total_latency=8529063
+RAM resp id:43000 m_cycle=335943 req_time=335740 resp_time=203 total_latency=8732111
+RAM resp id:44000 m_cycle=343600 req_time=343397 resp_time=203 total_latency=8935157
+RAM resp id:45000 m_cycle=351450 req_time=351247 resp_time=203 total_latency=9138186
+RAM resp id:46000 m_cycle=359268 req_time=359065 resp_time=203 total_latency=9341275
+RAM resp id:47000 m_cycle=367089 req_time=366886 resp_time=203 total_latency=9544290
+RAM resp id:48000 m_cycle=374899 req_time=374696 resp_time=203 total_latency=9747299
+RAM resp id:49000 m_cycle=382749 req_time=382546 resp_time=203 total_latency=9950313
+RAM resp id:50000 m_cycle=390565 req_time=390362 resp_time=203 total_latency=10153327
+RAM resp id:51000 m_cycle=398400 req_time=398197 resp_time=203 total_latency=10356341
+[Cycle: 400000]: mem_requests: 51220, mem_responses: 51205, avg_latency: 203
+RAM resp id:52000 m_cycle=406214 req_time=406011 resp_time=203 total_latency=10559355
+RAM resp id:53000 m_cycle=414039 req_time=413836 resp_time=203 total_latency=10762369
+RAM resp id:54000 m_cycle=421848 req_time=421645 resp_time=203 total_latency=10965381
+RAM resp id:55000 m_cycle=429645 req_time=429442 resp_time=203 total_latency=11168395
+RAM resp id:56000 m_cycle=437488 req_time=437285 resp_time=203 total_latency=11371409
+RAM resp id:57000 m_cycle=445321 req_time=445118 resp_time=203 total_latency=11574423
+RAM resp id:58000 m_cycle=453151 req_time=452948 resp_time=203 total_latency=11777437
+RAM resp id:59000 m_cycle=460956 req_time=460753 resp_time=203 total_latency=11980451
+RAM resp id:60000 m_cycle=468770 req_time=468567 resp_time=203 total_latency=12183465
+RAM resp id:61000 m_cycle=476603 req_time=476400 resp_time=203 total_latency=12386479
+RAM resp id:62000 m_cycle=484486 req_time=484283 resp_time=203 total_latency=12589493
+RAM resp id:63000 m_cycle=492296 req_time=492093 resp_time=203 total_latency=12792507
+RAM resp id:64000 m_cycle=499972 req_time=499769 resp_time=203 total_latency=12995521
+[Cycle: 500000]: mem_requests: 64020, mem_responses: 64005, avg_latency: 203
+RAM resp id:65000 m_cycle=507693 req_time=507490 resp_time=203 total_latency=13198534
+core 1 retired
+core 5 retired
+core 3 retired
+core 0 retired
+core 6 retired
+core 2 retired
+core 4 retired
+core 7 retired
+========== kernel 0 summary ==========
+Core: 0
+	CORE0_TOT_CYCLES   : 511941
+	CORE0_STALL_CYCLES : 394691
+	CORE0_LD_INSTR     : 8192
+	CORE0_ST_INSTR     : 0
+	CORE0_TOT_INSTR    : 511941
+Core: 1
+	CORE1_TOT_CYCLES   : 511670
+	CORE1_STALL_CYCLES : 394420
+	CORE1_LD_INSTR     : 8192
+	CORE1_ST_INSTR     : 0
+	CORE1_TOT_INSTR    : 511670
+Core: 2
+	CORE2_TOT_CYCLES   : 512054
+	CORE2_STALL_CYCLES : 394804
+	CORE2_LD_INSTR     : 8192
+	CORE2_ST_INSTR     : 0
+	CORE2_TOT_INSTR    : 512054
+Core: 3
+	CORE3_TOT_CYCLES   : 511820
+	CORE3_STALL_CYCLES : 394570
+	CORE3_LD_INSTR     : 8192
+	CORE3_ST_INSTR     : 0
+	CORE3_TOT_INSTR    : 511820
+Core: 4
+	CORE4_TOT_CYCLES   : 512200
+	CORE4_STALL_CYCLES : 394950
+	CORE4_LD_INSTR     : 8192
+	CORE4_ST_INSTR     : 0
+	CORE4_TOT_INSTR    : 512200
+Core: 5
+	CORE5_TOT_CYCLES   : 511701
+	CORE5_STALL_CYCLES : 394451
+	CORE5_LD_INSTR     : 8192
+	CORE5_ST_INSTR     : 0
+	CORE5_TOT_INSTR    : 511701
+Core: 6
+	CORE6_TOT_CYCLES   : 512010
+	CORE6_STALL_CYCLES : 394760
+	CORE6_LD_INSTR     : 8192
+	CORE6_ST_INSTR     : 0
+	CORE6_TOT_INSTR    : 512010
+Core: 7
+	CORE7_TOT_CYCLES   : 512278
+	CORE7_STALL_CYCLES : 395028
+	CORE7_LD_INSTR     : 8192
+	CORE7_ST_INSTR     : 0
+	CORE7_TOT_INSTR    : 512278
+GPU Retired.
+**************************************************
+Simulation finished @ Wed Mar 13 20:36:18 2024
+
+Total simulation time: 0:0:1
+
+============= MacSim Stats =============
+Macsim:
+	NUM_CYCLES              : 512277
+	NUM_INSTRS_RETIRED      : 868352
+	NUM_STALL_CYCLES        : 3157674
+	NUM_MEM_REQUESTS        : 65536
+	NUM_MEM_RESPONSES       : 65536
+	AVG_RESPONSE_LATENCY    : 203
+	NUM_TTIMEDOUT_REQUESTS  : 0
+	INSTR_PER_CYCLE         : 1.695083
+Cache:
+	CACHE_NUM_ACCESSES    : 131072
+	CACHE_NUM_HITS        : 65536
+	CACHE_HIT_RATE_PERC   : 50.00
+	MISSES_PER_1000_INSTR : 75.47
+
+========================================
+
+[END OF GPU SIMULATION]

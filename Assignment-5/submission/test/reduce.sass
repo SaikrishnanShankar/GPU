@@ -1,0 +1,135 @@
+
+Fatbin elf code:
+================
+arch = sm_52
+code version = [1,7]
+host = linux
+compile_size = 64bit
+
+	code for sm_52
+		Function : _Z7reduce0IfEvPT_S1_j
+	.headerflags	@"EF_CUDA_TEXMODE_UNIFIED EF_CUDA_64BIT_ADDRESS EF_CUDA_SM52 EF_CUDA_VIRTUAL_SM(EF_CUDA_SM52)"
+                                                                                     /* 0x001c5800fe0007f6 */
+        /*0008*/                   MOV R1, c[0x0][0x20] ;                            /* 0x4c98078000870001 */
+        /*0010*/                   MOV R6, c[0x0][0x8] ;                             /* 0x4c98078000270006 */
+        /*0018*/                   S2R R0, SR_CTAID.X ;                              /* 0xf0c8000002570000 */
+                                                                                     /* 0x001fc400e62007f0 */
+        /*0028*/                   ISETP.GE.U32.AND P2, PT, R6, 0x2, PT ;            /* 0x366c038000270617 */
+        /*0030*/                   S2R R2, SR_TID.X ;                                /* 0xf0c8000002170002 */
+        /*0038*/                   SSY 0xd0 ;                                        /* 0xe290000009000000 */
+                                                                                     /* 0x001f9402fe220ff1 */
+        /*0048*/                   XMAD.MRG R5, R0.reuse, c[0x0] [0x8].H1, RZ ;      /* 0x4f107f8000270005 */
+        /*0050*/                   XMAD R3, R0, c[0x0] [0x8], R2 ;                   /* 0x4e00010000270003 */
+        /*0058*/                   ISETP.NE.AND P0, PT, R2, RZ, PT ;                 /* 0x5b6b03800ff70207 */
+                                                                                     /* 0x001fd000fe2007f1 */
+        /*0068*/                   XMAD.PSL.CBCC R4, R0.H1, R5.H1, R3 ;              /* 0x5b30019800570004 */
+        /*0070*/                   SHL R3, R2, 0x2 ;                                 /* 0x3848000000270203 */
+        /*0078*/                   MOV R5, RZ ;                                      /* 0x5c9807800ff70005 */
+                                                                                     /* 0x081fc400ffa007ed */
+        /*0088*/                   ISETP.GE.U32.AND P1, PT, R4, c[0x0][0x150], PT ;  /* 0x4b6c03800547040f */
+        /*0090*/               @P1 SYNC ;                                            /* 0xf0f800000001000f */
+        /*0098*/                   SHR.U32 R5, R4.reuse, 0x1e ;                      /* 0x3828000001e70405 */
+                                                                                     /* 0x0002c400fe4007f6 */
+        /*00a8*/                   ISCADD R4.CC, R4, c[0x0][0x140], 0x2 ;            /* 0x4c18810005070404 */
+        /*00b0*/                   IADD.X R5, R5, c[0x0][0x144] ;                    /* 0x4c10080005170505 */
+        /*00b8*/                   LDG.E R5, [R4] ;                                  /* 0xeed4200000070405 */
+                                                                                     /* 0x001f8820fe2007f5 */
+        /*00c8*/                   SYNC ;                                            /* 0xf0f800000007000f */
+        /*00d0*/                   STS [R3], R5 ;                                    /* 0xef5c000000070305 */
+        /*00d8*/                   NOP ;                                             /* 0x50b0000000070f00 */
+                                                                                     /* 0x001ff400fea007ff */
+        /*00e8*/                   BAR.SYNC 0x0 ;                                    /* 0xf0a81b8000070000 */
+        /*00f0*/                   MEMBAR.CTA ;                                      /* 0xef98000000070000 */
+        /*00f8*/              @!P2 BRA 0x2b8 ;                                       /* 0xe24000001b8a000f */
+                                                                                     /* 0x001c5000fe400ff6 */
+        /*0108*/                   MOV32I R4, 0x1 ;                                  /* 0x010000000017f004 */
+        /*0110*/                   IADD R11, R4, R4 ;                                /* 0x5c1000000047040b */
+        /*0118*/                   I2F.F32.U32.RP R5, R11 ;                          /* 0x5cb8010000b70a05 */
+                                                                                     /* 0x003fc801e3a007ed */
+        /*0128*/                   ISETP.EQ.U32.AND P2, PT, R11, RZ, PT ;            /* 0x5b6403800ff70b17 */
+        /*0130*/                   MUFU.RCP R5, R5 ;                                 /* 0x5080000000470505 */
+        /*0138*/                   IADD32I R6, R5, 0xffffffe ;                       /* 0x1c00ffffffe70506 */
+                                                                                     /* 0x001f98c1fe20071d */
+        /*0148*/                   F2I.FTZ.U32.F32.TRUNC R6, R6 ;                    /* 0x5cb0118000670a06 */
+        /*0150*/                   XMAD R7, R6.reuse, R11.reuse, RZ ;                /* 0x5b007f8000b70607 */
+        /*0158*/                   XMAD.MRG R8, R6, R11.H1, RZ ;                     /* 0x5b007fa800b70608 */
+                                                                                     /* 0x181fc400fec207f6 */
+        /*0168*/                   XMAD.PSL.CBCC R7, R6.H1.reuse, R8.H1, R7 ;        /* 0x5b30039800870607 */
+        /*0170*/                   IADD R12, -R7, RZ ;                               /* 0x5c1200000ff7070c */
+        /*0178*/                   XMAD R7, R6.reuse, R12.reuse, RZ ;                /* 0x5b007f8000c70607 */
+                                                                                     /* 0x001f98c0fe8607f1 */
+        /*0188*/                   XMAD R8, R6.reuse, R12.H1.reuse, RZ ;             /* 0x5b007f8800c70608 */
+        /*0190*/                   XMAD R9, R6.H1.reuse, R12.H1.reuse, R6 ;          /* 0x5b20030800c70609 */
+        /*0198*/                   XMAD.CHI R7, R6.H1, R12, R7 ;                     /* 0x5b28038000c70607 */
+                                                                                     /* 0x181fc4c0fe2007f6 */
+        /*01a8*/                   IADD3.RS R5, R7, R8, R9 ;                         /* 0x5cc004a000870705 */
+        /*01b0*/                   XMAD R7, R5.reuse, R2.reuse, RZ ;                 /* 0x5b007f8000270507 */
+        /*01b8*/                   XMAD R6, R5.reuse, R2.H1.reuse, RZ ;              /* 0x5b007f8800270506 */
+                                                                                     /* 0x001fd800ffa607f4 */
+        /*01c8*/                   XMAD R8, R5.H1.reuse, R2.H1.reuse, RZ ;           /* 0x5b207f8800270508 */
+        /*01d0*/                   XMAD.CHI R5, R5.H1, R2, R7 ;                      /* 0x5b28038000270505 */
+        /*01d8*/                   IADD3.RS R5, R5, R6, R8 ;                         /* 0x5cc0042000670505 */
+                                                                                     /* 0x181fd8c0fe2007e6 */
+        /*01e8*/                   IADD R5, -R5, RZ ;                                /* 0x5c1200000ff70505 */
+        /*01f0*/                   XMAD R6, R5.reuse, R11.reuse, R2 ;                /* 0x5b00010000b70506 */
+        /*01f8*/                   XMAD.MRG R7, R5.reuse, R11.H1.reuse, RZ ;         /* 0x5b007fa800b70507 */
+                                                                                     /* 0x001fd800fda007f6 */
+        /*0208*/                   XMAD.PSL.CBCC R5, R5.H1, R7.H1, R6 ;              /* 0x5b30031800770505 */
+        /*0210*/                   ISETP.GE.U32.AND P1, PT, R5, R11, PT ;            /* 0x5b6c038000b7050f */
+        /*0218*/               @P1 IADD R5, -R11, R5 ;                               /* 0x5c12000000510b05 */
+                                                                                     /* 0x001f8400fe2007ed */
+        /*0228*/                   ISETP.GE.U32.AND P1, PT, R5, R11, PT ;            /* 0x5b6c038000b7050f */
+        /*0230*/               @P1 IADD R5, -R11, R5 ;                               /* 0x5c12000000510b05 */
+        /*0238*/               @P2 LOP.PASS_B R5, RZ, ~R11 ;                         /* 0x5c47070000b2ff05 */
+                                                                                     /* 0x001fc000fda007f5 */
+        /*0248*/                   ISETP.GE.U32.AND P2, PT, R11, c[0x0][0x8], PT ;   /* 0x4b6c038000270b17 */
+        /*0250*/                   ISETP.NE.AND P1, PT, R5, RZ, PT ;                 /* 0x5b6b03800ff7050f */
+        /*0258*/              @!P1 ISCADD R5, R4, R3, 0x2 ;                          /* 0x5c18010000390405 */
+                                                                                     /* 0x003fd000e24007f4 */
+        /*0268*/              @!P1 LDS.U.32 R4, [R3] ;                               /* 0xef4c100000090304 */
+        /*0270*/              @!P1 LDS.U.32 R5, [R5] ;                               /* 0xef4c100000090505 */
+        /*0278*/              @!P1 FADD R6, R4, R5 ;                                 /* 0x5c58000000590406 */
+                                                                                     /* 0x001ffc00fe2007f0 */
+        /*0288*/                   MOV R4, R11 ;                                     /* 0x5c98078000b70004 */
+        /*0290*/              @!P1 STS [R3], R6 ;                                    /* 0xef5c000000090306 */
+        /*0298*/                   BAR.SYNC 0x0 ;                                    /* 0xf0a81b8000070000 */
+                                                                                     /* 0x001fbc00ffa007f5 */
+        /*02a8*/                   MEMBAR.CTA ;                                      /* 0xef98000000070000 */
+        /*02b0*/              @!P2 BRA 0x110 ;                                       /* 0xe2400fffe58a000f */
+        /*02b8*/                   NOP ;                                             /* 0x50b0000000070f00 */
+                                                                                     /* 0x001f8800fde007ef */
+        /*02c8*/                   NOP ;                                             /* 0x50b0000000070f00 */
+        /*02d0*/                   NOP ;                                             /* 0x50b0000000070f00 */
+        /*02d8*/                   NOP ;                                             /* 0x50b0000000070f00 */
+                                                                                     /* 0x003c4440fe0007fd */
+        /*02e8*/               @P0 EXIT ;                                            /* 0xe30000000000000f */
+        /*02f0*/                   SHR.U32 R3, R0.reuse, 0x1e ;                      /* 0x3828000001e70003 */
+        /*02f8*/                   LDS.U.32 R4, [RZ] ;                               /* 0xef4c10000007ff04 */
+                                                                                     /* 0x003fc400ffa007ed */
+        /*0308*/                   ISCADD R2.CC, R0, c[0x0][0x148], 0x2 ;            /* 0x4c18810005270002 */
+        /*0310*/                   IADD.X R3, R3, c[0x0][0x14c] ;                    /* 0x4c10080005370303 */
+        /*0318*/                   STG.E [R2], R4 ;                                  /* 0xeedc200000070204 */
+                                                                                     /* 0x001ffc00fda007ef */
+        /*0328*/                   NOP ;                                             /* 0x50b0000000070f00 */
+        /*0330*/                   NOP ;                                             /* 0x50b0000000070f00 */
+        /*0338*/                   EXIT ;                                            /* 0xe30000000007000f */
+                                                                                     /* 0x001f8000fc0007ff */
+        /*0348*/                   BRA 0x340 ;                                       /* 0xe2400fffff07000f */
+        /*0350*/                   NOP;                                              /* 0x50b0000000070f00 */
+        /*0358*/                   NOP;                                              /* 0x50b0000000070f00 */
+                                                                                     /* 0x001f8000fc0007e0 */
+        /*0368*/                   NOP;                                              /* 0x50b0000000070f00 */
+        /*0370*/                   NOP;                                              /* 0x50b0000000070f00 */
+        /*0378*/                   NOP;                                              /* 0x50b0000000070f00 */
+		..........
+
+
+
+Fatbin ptx code:
+================
+arch = sm_52
+code version = [8,5]
+host = linux
+compile_size = 64bit
+compressed
+ptxasOptions = 

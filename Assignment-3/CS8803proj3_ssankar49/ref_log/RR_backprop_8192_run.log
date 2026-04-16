@@ -1,0 +1,172 @@
+Reading GPU Configurations...Block Scheduling Policy: ROUND_ROBIN
+Warp Scheduling Policy: ROUND_ROBIN
+trace type : nvbit
+> trace_path: /fast_data/echung67/trace/nvbit/backprop/8192/Kernel0/trace.txt truncate_size: 0
+ trace type : nvbit
+# of blocks: 512, # of warps: 4096, # of Instrs: 429568
+> trace_path: /fast_data/echung67/trace/nvbit/backprop/8192/Kernel1/trace.txt truncate_size: 0
+ trace type : nvbit
+# of blocks: 512, # of warps: 4096, # of Instrs: 180247
+Macsim started @ Wed Mar 13 20:36:16 2024
+
+**************************************************
+========== starting kernel 0 ==========
+n_blocks_per_kernel[kernel_id]: 512 m_gpu_params->Block_Stride: 1 n_of_cores: 8
+RAM resp id:0 m_cycle=236 req_time=33 resp_time=203 total_latency=203
+RAM resp id:1000 m_cycle=13942 req_time=13739 resp_time=203 total_latency=169351
+RAM resp id:2000 m_cycle=26120 req_time=25917 resp_time=203 total_latency=310905
+RAM resp id:3000 m_cycle=37450 req_time=0 resp_time=0 total_latency=447355
+RAM resp id:4000 m_cycle=49464 req_time=49261 resp_time=203 total_latency=583585
+RAM resp id:5000 m_cycle=60958 req_time=0 resp_time=0 total_latency=720692
+RAM resp id:6000 m_cycle=72467 req_time=0 resp_time=0 total_latency=856768
+core 2 retired
+core 5 retired
+core 6 retired
+core 4 retired
+core 1 retired
+core 3 retired
+core 0 retired
+core 7 retired
+========== kernel 0 summary ==========
+Core: 0
+	CORE0_TOT_CYCLES   : 77727
+	CORE0_STALL_CYCLES : 22932
+	CORE0_LD_INSTR     : 431
+	CORE0_ST_INSTR     : 154
+	CORE0_TOT_INSTR    : 77727
+Core: 1
+	CORE1_TOT_CYCLES   : 77592
+	CORE1_STALL_CYCLES : 22814
+	CORE1_LD_INSTR     : 431
+	CORE1_ST_INSTR     : 137
+	CORE1_TOT_INSTR    : 77592
+Core: 2
+	CORE2_TOT_CYCLES   : 77500
+	CORE2_STALL_CYCLES : 22711
+	CORE2_LD_INSTR     : 432
+	CORE2_ST_INSTR     : 147
+	CORE2_TOT_INSTR    : 77500
+Core: 3
+	CORE3_TOT_CYCLES   : 77600
+	CORE3_STALL_CYCLES : 22816
+	CORE3_LD_INSTR     : 439
+	CORE3_ST_INSTR     : 135
+	CORE3_TOT_INSTR    : 77600
+Core: 4
+	CORE4_TOT_CYCLES   : 77585
+	CORE4_STALL_CYCLES : 22006
+	CORE4_LD_INSTR     : 429
+	CORE4_ST_INSTR     : 93
+	CORE4_TOT_INSTR    : 77585
+Core: 5
+	CORE5_TOT_CYCLES   : 77506
+	CORE5_STALL_CYCLES : 22717
+	CORE5_LD_INSTR     : 441
+	CORE5_ST_INSTR     : 138
+	CORE5_TOT_INSTR    : 77506
+Core: 6
+	CORE6_TOT_CYCLES   : 77507
+	CORE6_STALL_CYCLES : 22718
+	CORE6_LD_INSTR     : 433
+	CORE6_ST_INSTR     : 146
+	CORE6_TOT_INSTR    : 77507
+Core: 7
+	CORE7_TOT_CYCLES   : 77784
+	CORE7_STALL_CYCLES : 23894
+	CORE7_LD_INSTR     : 450
+	CORE7_ST_INSTR     : 77
+	CORE7_TOT_INSTR    : 77784
+========== starting kernel 1 ==========
+n_blocks_per_kernel[kernel_id]: 512 m_gpu_params->Block_Stride: 1 n_of_cores: 8
+RAM resp id:7000 m_cycle=82880 req_time=82677 resp_time=203 total_latency=1026043
+RAM resp id:8000 m_cycle=91087 req_time=90884 resp_time=203 total_latency=1192666
+RAM resp id:9000 m_cycle=98552 req_time=98349 resp_time=203 total_latency=1344641
+[Cycle: 100000]: mem_requests: 9210, mem_responses: 9198, avg_latency: 149
+RAM resp id:10000 m_cycle=106020 req_time=105817 resp_time=203 total_latency=1496823
+RAM resp id:11000 m_cycle=113505 req_time=0 resp_time=0 total_latency=1648863
+RAM resp id:12000 m_cycle=121058 req_time=120855 resp_time=203 total_latency=1801689
+RAM resp id:13000 m_cycle=128316 req_time=128113 resp_time=203 total_latency=1951601
+RAM resp id:14000 m_cycle=135879 req_time=135676 resp_time=203 total_latency=2103370
+RAM resp id:15000 m_cycle=143368 req_time=143165 resp_time=203 total_latency=2252981
+core 3 retired
+core 0 retired
+core 7 retired
+core 4 retired
+core 1 retired
+core 5 retired
+core 6 retired
+core 2 retired
+========== kernel 1 summary ==========
+Core: 0
+	CORE0_TOT_CYCLES   : 145286
+	CORE0_STALL_CYCLES : 66877
+	CORE0_LD_INSTR     : 840
+	CORE0_ST_INSTR     : 13
+	CORE0_TOT_INSTR    : 145286
+Core: 1
+	CORE1_TOT_CYCLES   : 145535
+	CORE1_STALL_CYCLES : 66668
+	CORE1_LD_INSTR     : 844
+	CORE1_ST_INSTR     : 12
+	CORE1_TOT_INSTR    : 145535
+Core: 2
+	CORE2_TOT_CYCLES   : 146385
+	CORE2_STALL_CYCLES : 67050
+	CORE2_LD_INSTR     : 843
+	CORE2_ST_INSTR     : 18
+	CORE2_TOT_INSTR    : 146385
+Core: 3
+	CORE3_TOT_CYCLES   : 145220
+	CORE3_STALL_CYCLES : 66383
+	CORE3_LD_INSTR     : 828
+	CORE3_ST_INSTR     : 0
+	CORE3_TOT_INSTR    : 145220
+Core: 4
+	CORE4_TOT_CYCLES   : 145346
+	CORE4_STALL_CYCLES : 65682
+	CORE4_LD_INSTR     : 834
+	CORE4_ST_INSTR     : 11
+	CORE4_TOT_INSTR    : 145346
+Core: 5
+	CORE5_TOT_CYCLES   : 145804
+	CORE5_STALL_CYCLES : 66847
+	CORE5_LD_INSTR     : 842
+	CORE5_ST_INSTR     : 7
+	CORE5_TOT_INSTR    : 145804
+Core: 6
+	CORE6_TOT_CYCLES   : 145955
+	CORE6_STALL_CYCLES : 66630
+	CORE6_LD_INSTR     : 842
+	CORE6_ST_INSTR     : 16
+	CORE6_TOT_INSTR    : 145955
+Core: 7
+	CORE7_TOT_CYCLES   : 145339
+	CORE7_STALL_CYCLES : 67914
+	CORE7_LD_INSTR     : 854
+	CORE7_ST_INSTR     : 0
+	CORE7_TOT_INSTR    : 145339
+GPU Retired.
+**************************************************
+Simulation finished @ Wed Mar 13 20:36:17 2024
+
+Total simulation time: 0:0:1
+
+============= MacSim Stats =============
+Macsim:
+	NUM_CYCLES              : 146384
+	NUM_INSTRS_RETIRED      : 609815
+	NUM_STALL_CYCLES        : 534051
+	NUM_MEM_REQUESTS        : 15320
+	NUM_MEM_RESPONSES       : 15318
+	AVG_RESPONSE_LATENCY    : 150
+	NUM_TTIMEDOUT_REQUESTS  : 0
+	INSTR_PER_CYCLE         : 4.165858
+Cache:
+	CACHE_NUM_ACCESSES    : 64572
+	CACHE_NUM_HITS        : 42561
+	CACHE_HIT_RATE_PERC   : 65.91
+	MISSES_PER_1000_INSTR : 36.09
+
+========================================
+
+[END OF GPU SIMULATION]

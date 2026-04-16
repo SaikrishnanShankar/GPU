@@ -1,0 +1,113 @@
+Reading GPU Configurations...Block Scheduling Policy: ROUND_ROBIN
+Warp Scheduling Policy: GTO
+trace type : nvbit
+> trace_path: /fast_data/echung67/trace/nvbit/nn/256k/Kernel0/trace.txt truncate_size: 0
+ trace type : nvbit
+# of blocks: 1024, # of warps: 8192, # of Instrs: 245760
+Macsim started @ Wed Mar 13 20:36:28 2024
+
+**************************************************
+========== starting kernel 0 ==========
+n_blocks_per_kernel[kernel_id]: 1024 m_gpu_params->Block_Stride: 1 n_of_cores: 8
+RAM resp id:0 m_cycle=213 req_time=10 resp_time=203 total_latency=203
+RAM resp id:1000 m_cycle=6320 req_time=6117 resp_time=203 total_latency=172459
+RAM resp id:2000 m_cycle=11233 req_time=11030 resp_time=203 total_latency=308875
+RAM resp id:3000 m_cycle=16146 req_time=0 resp_time=0 total_latency=441840
+RAM resp id:4000 m_cycle=21072 req_time=20869 resp_time=203 total_latency=578459
+RAM resp id:5000 m_cycle=26312 req_time=26109 resp_time=203 total_latency=713086
+RAM resp id:6000 m_cycle=32056 req_time=0 resp_time=0 total_latency=850967
+RAM resp id:7000 m_cycle=37771 req_time=0 resp_time=0 total_latency=992512
+RAM resp id:8000 m_cycle=43492 req_time=0 resp_time=0 total_latency=1130195
+RAM resp id:9000 m_cycle=49370 req_time=0 resp_time=0 total_latency=1272127
+RAM resp id:10000 m_cycle=55268 req_time=0 resp_time=0 total_latency=1412648
+RAM resp id:11000 m_cycle=61022 req_time=60819 resp_time=203 total_latency=1553184
+RAM resp id:12000 m_cycle=66827 req_time=66624 resp_time=203 total_latency=1693917
+RAM resp id:13000 m_cycle=72839 req_time=0 resp_time=0 total_latency=1834649
+RAM resp id:14000 m_cycle=78650 req_time=78447 resp_time=203 total_latency=1976781
+RAM resp id:15000 m_cycle=84495 req_time=84292 resp_time=203 total_latency=2116474
+RAM resp id:16000 m_cycle=90336 req_time=90133 resp_time=203 total_latency=2256802
+RAM resp id:17000 m_cycle=96236 req_time=96033 resp_time=203 total_latency=2398130
+[Cycle: 100000]: mem_requests: 17695, mem_responses: 17662, avg_latency: 141
+RAM resp id:18000 m_cycle=101969 req_time=101766 resp_time=203 total_latency=2538028
+core 6 retired
+core 5 retired
+core 7 retired
+core 0 retired
+core 1 retired
+core 3 retired
+core 2 retired
+core 4 retired
+========== kernel 0 summary ==========
+Core: 0
+	CORE0_TOT_CYCLES   : 105150
+	CORE0_STALL_CYCLES : 71801
+	CORE0_LD_INSTR     : 872
+	CORE0_ST_INSTR     : 731
+	CORE0_TOT_INSTR    : 105150
+Core: 1
+	CORE1_TOT_CYCLES   : 105265
+	CORE1_STALL_CYCLES : 72142
+	CORE1_LD_INSTR     : 874
+	CORE1_ST_INSTR     : 751
+	CORE1_TOT_INSTR    : 105265
+Core: 2
+	CORE2_TOT_CYCLES   : 105720
+	CORE2_STALL_CYCLES : 72342
+	CORE2_LD_INSTR     : 880
+	CORE2_ST_INSTR     : 752
+	CORE2_TOT_INSTR    : 105720
+Core: 3
+	CORE3_TOT_CYCLES   : 105692
+	CORE3_STALL_CYCLES : 72081
+	CORE3_LD_INSTR     : 876
+	CORE3_ST_INSTR     : 741
+	CORE3_TOT_INSTR    : 105692
+Core: 4
+	CORE4_TOT_CYCLES   : 105738
+	CORE4_STALL_CYCLES : 72601
+	CORE4_LD_INSTR     : 882
+	CORE4_ST_INSTR     : 757
+	CORE4_TOT_INSTR    : 105738
+Core: 5
+	CORE5_TOT_CYCLES   : 105134
+	CORE5_STALL_CYCLES : 72020
+	CORE5_LD_INSTR     : 876
+	CORE5_ST_INSTR     : 740
+	CORE5_TOT_INSTR    : 105134
+Core: 6
+	CORE6_TOT_CYCLES   : 105052
+	CORE6_STALL_CYCLES : 71702
+	CORE6_LD_INSTR     : 868
+	CORE6_ST_INSTR     : 736
+	CORE6_TOT_INSTR    : 105052
+Core: 7
+	CORE7_TOT_CYCLES   : 105147
+	CORE7_STALL_CYCLES : 71318
+	CORE7_LD_INSTR     : 870
+	CORE7_ST_INSTR     : 717
+	CORE7_TOT_INSTR    : 105147
+GPU Retired.
+**************************************************
+Simulation finished @ Wed Mar 13 20:36:29 2024
+
+Total simulation time: 0:0:1
+
+============= MacSim Stats =============
+Macsim:
+	NUM_CYCLES              : 105737
+	NUM_INSTRS_RETIRED      : 245760
+	NUM_STALL_CYCLES        : 576007
+	NUM_MEM_REQUESTS        : 18632
+	NUM_MEM_RESPONSES       : 18630
+	AVG_RESPONSE_LATENCY    : 140
+	NUM_TTIMEDOUT_REQUESTS  : 0
+	INSTR_PER_CYCLE         : 2.324257
+Cache:
+	CACHE_NUM_ACCESSES    : 37499
+	CACHE_NUM_HITS        : 15102
+	CACHE_HIT_RATE_PERC   : 40.27
+	MISSES_PER_1000_INSTR : 91.13
+
+========================================
+
+[END OF GPU SIMULATION]
